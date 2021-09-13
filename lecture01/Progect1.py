@@ -1,6 +1,7 @@
 import math
 
-ABside = int(input("Введите пожалуйста длину стороны AB: "))
-ACside = int(input("Введите пожалуйста длину стороны AC: "))
-corner = math.cos(int(input("Введите пожалуйста градус Цельсия угла нашего треугольника: ")))
-print(round(ABside**+ACside**-2*ACside*ABside*(math.cos(corner*180 / math.pi))))
+
+ABside = float(input("Введите пожалуйста длину стороны AB: "))
+ACside = float(input("Введите пожалуйста длину стороны AC: "))
+corner = float(input("Введите пожалуйста градус угла нашего треугольника: "))
+print(math.sqrt(ABside**2+ACside**2-2*ACside*ABside*(math.cos(math.radians(corner))))) 
